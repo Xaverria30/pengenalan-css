@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - 3 Cahaya Network</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-box img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .input-group input:focus {
+      border-color: #4a90e2;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #357abd;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="pt3cahaya.jpg" alt="Logo 3 Cahaya">
+    <h2>Login</h2>
+
+    <form action="dashboard.html" method="get">
+      <div class="input-group">
+        <input type="text" placeholder="Username" required
+        onfocus="this.style.backgroundColor='lightgray'" 
+        onblur="this.style.backgroundColor='white'"
+        style="width:90%; padding:10px; margin:10px 0; border-radius:10px; border:1px solid black; outline:none; transition:background-color 0.3s ease;"><br>
+
+      <div class="input-group">
+       <input type="password" placeholder="Password" required
+        onfocus="this.style.backgroundColor='lightgray'" 
+        onblur="this.style.backgroundColor='white'"
+        style="width:90%; padding:10px; margin:10px 0; border-radius:10px; border:1px solid black; outline:none; transition:background-color 0.3s ease;"><br>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+</body>
+</html>
